@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<title>My Electric Bike Website</title>
+  <link rel="stylesheet" href="ep1.css">
+
+  <script src="script.js"></script>
+</head>
+
+<header>
+  <img src="https://media3.giphy.com/media/xT0GqKurRBk0V67B5K/giphy.gif" alt="Background Image" class="background-image">
+  <div class="logo">
+    <img src="data:image/jpeg;base64,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" alt="Logo">
+  </div>
+</header>
+
+ <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4y2MOv6LlyG36Fu9ZMLh3hK4fKSDXJNUQhw&usqp=CAU" alt="Logo" width="50" height="30" class="d-inline-block align-text-top">
+        <a class="navbar-brand" href="https://www.relwaniautomotives.com/"> Relwani Automotive</a>
+<input name="search" class="btn" />
+    <div class="Jig">
+     <ol>
+        <li><a href="#"> Home</a> </li>
+        <li><a href="#">A</a> </li>
+        <li><a href="#"> B</a> </li>
+        <li><a href="#"> C</a> </li>
+        <li><a href="#"> D</a> </li>
+     </ol>
+    </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h4 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Ride The Future</h4>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="My_Orders.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="user.php">Test Ride</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Blogs</a></li>
+              <li><a class="dropdown-item" href="#">Contac Us</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">FAQs</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+        </form>
+      </div>
+    </div>
+   </div>
+  </nav>
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="300">
+        <img src="D:\RM\Motors\elements\2.Railwanipost.jpg" class="d-block w-100" height="470" alt="eve">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: orange">The Future is here</h5>
+        <p style="color: pink">Get Ready for the thrill</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="300">
+     <img src="D:\RM\Motors\elements\wallpaper1-1-scaled.png" class="d-block w-100" height="470" alt="dusk">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: orange">The Revolution</h5>
+          <p style="color: pink">Keep calm and roll on</p>
+      </div>
+    </div>
+      <div class="carousel-item" data-bs-interval="300">
+          <video controls autoplay src="D:\RM\Motors\elements\RM V1Edit1.mp4" class="d-block w-100" height="470">
+     </video>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: orange">curiosity</h5>
+          <p style="color: pink">Curiosity se bada koi sikxchak nhi!</p>
+      </div>
+    </div>
+   <div class="carousel-item" data-bs-interval="300">
+      <img src="D:\RM\Motors\elements\1.Railwanipost.jpg" class="d-block w-100" height="470" alt="alone">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color:orange">Alone</h5>
+        <p style="color: pink">Walking the most uncovered path</p>
+      </div>
+    </div>
+      <div class="carousel-item" data-bs-interval="5000">
+     <video controls autoplay src="D:\RM\Motors\DSC_0051.MOV" class="d-block w-100" height="470">
+     </video>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: orange">Vyage</h5>
+          <p style="color: pink">Ride The Future</p>
+      </div>
+    </div>
+  </div>
+ <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+      </div>
+    </div>
+<main>
+    <section id="hero">
+      <video src=C:\Users\jigyashu\Downloads\DSC_0025.mp4" autoplay loop muted>
+      <div class="content">
+        <h2>The future of transportation is here.</h2>
+        <p>My electric bike is the most advanced and innovative electric bike on the market. It's fast, efficient, and eco-friendly.</p>
+        <a href="#about">Learn More</a>
+      </div>
+      </video>
+    </section>
+    <section id="about">
+      <h2>About My Electric Bike</h2>
+      <p>My electric bike is powered by a state-of-the-art motor and battery system that provides unparalleled performance and range. It also features a number of innovative features, such as a smart display, built-in navigation, and anti-theft protection.</p>
+    </section>
+    <section id="features">
+      <h2>Features</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <h3>Powerful Motor</h3>
+          <p>My electric bike is powered by a powerful motor that can easily accelerate you up to speeds of 25 mph.</p>
+        </div>
+        <div class="feature">
+          <h3>Long-Range Battery</h3>
+          <p>My electric bike features a long-range battery that can provide up to 50 miles of riding on a single charge.</p>
+        </div>
+        <div class="feature">
+          <h3>Smart Display</h3>
+          <p>My electric bike features a smart display that provides you with all the information you need, such as your speed, battery level, and distance traveled.</p>
+        </div>
+        <div class="feature">
+          <h3>Built-In Navigation</h3>
+          <p>My electric bike features built-in navigation that can help you get to your destination quickly and easily.</p>
+        </div>
+        <div class="feature">
+          <h3>Anti-Theft Protection</h3>
+          <p>My electric bike features anti-theft protection that will keep your bike safe from thieves.</p>
+        </div>
+      </div>
+    </section>
+    <section id="benefits">
+      <h2>Benefits of Riding My Electric Bike</h2>
+      <div class="benefits-grid">
+        <div class="benefit">
+          <h3>It's good for the environment.</h3>
+          <p>Electric bikes are zero-emission vehicles, so they're good for the environment.</p>
+        </div>
+        <div class="benefit">
+          <h3>It's a great way to get exercise.</h3>
+          <p>Riding an electric bike is a great way to get exercise and improve your cardiovascular health.</p>
+        </div>
+        <div class="benefit">
+          <h3>It's a fun way to get around.</h3>
+          <p>Riding an electric bike is a fun and exciting way to get around.</p>
+        </div>
+        <div class="benefit">
+          <h3>It can save you money on gas and parking.</h3>
+          <p>Riding an electric bike can save you money on gas and parking, especially if you commute to work or school.</p>
+        </div>
+      </div>
+    </section>
+    <section id="call-to-action">
+      <h2>Order Your Electric Bike Today!</h2>
+      <p>Order your electric bike today and experience the future of transportation.</p>
+      <a href="#">Order Now</a>
+    </section>
+    <section id="footer">
+      <p>Copyright &copy; 2023 My Electric Bike Website</p>
+    </section>
+  </main>
+
+</html>
