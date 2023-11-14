@@ -5,7 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+     .benefit {
+  flex-basis: 25%;
+  margin-bottom: 20px;
+}
 
+.call-to-action {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.call-to-action a {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    flex-direction: column;
+  }
+
+  .benefits-grid {
+    flex-direction: column;
+  }
+}
+nav {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+nav {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav a {
+  color: #fff685;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav .menu-button {
+  position: relative;
+}
+
+nav .menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color:#a28089;
+  width: 100%;
+}
+
+nav .menu-dropdown li {
+  padding: 10px 20px;
+}
+
+nav .menu-dropdown a {
+  color:#ADFF2F;
+}
+
+nav .menu-dropdown a:hover {
+  background-color: ;#51e2f5
+}
+
+nav:hover .menu-dropdown {
+  display: block;
+}
+
+
+nav .menu-button a::before {
+  content: '';
+  background-image: url('running-bike.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  animation: running-bike 1s linear infinite;
+  transform: rotate(0deg);
+  transition: 0.2s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav:hover .menu-button a::before {
+  transform: rotate(90deg);
+}
+
+@keyframes running-bike {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+    
+</style>
 
 <title>My Electric Bike Website</title>
   <link rel="stylesheet" href="rajs2001.github.io/jiggy/style.css">
